@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EmailJS Form</title>
+  <link rel="stylesheet" href="css.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("d62oayAclN0bHDijl"); 
+  </script>
+</head>
+<body>
+  <h1>Formulario</h1>
+  <form id="form">
+    <input type="text" name="from_name" placeholder="Tu nombre" required />
+    <input type="text" name="from_apellido" placeholder="Tu Apellido" required />
+    <input type="email" name="to_email" id="to_email" placeholder="Correo Electronico" required />
+    <input type="text" name="from_direccion" placeholder="Tu direccion" required />
+    <input type="tel" name="from_tel" placeholder="Celular" pattern="[0-9]{10}" required />
+    <input type="text" name="message" placeholder="Mensaje" required />
+    <input type="submit" id="button" value="Enviar" />
+  </form>
+  <main>
+    <div class="main-container">
+        <h2><span class="color">#f1f5f8</span></h2>
+        <button class="btn btn-hero" id="btn">Click aquí para cambiar el color de la pagina</button>
+    </div>
+</main>
+    
+  <script src="java.js"></script>
+</body>
+</html>
+
+
